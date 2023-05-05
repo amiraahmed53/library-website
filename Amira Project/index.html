@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Coding Books</title>
+  <link rel="icon" type="image/jpg" href="./public/favicon.ico" />
+  <link rel="stylesheet" href="./style/styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap" rel="stylesheet" />
+  <!-- fav icon -->
+  <script src="https://kit.fontawesome.com/e057b28e7b.js" crossorigin="anonymous"></script>
+  <!-- Box Icons -->
+  <link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet" />
+</head>
+
+<body class="block1">
+  <!-- Header -->
+  <header class="l-header">
+    <nav class="nav bd-grid">
+      <div class="nav_logo">
+        
+        <a href="index.html" class="nav_logo_text">
+          <h1>Dream Novels</h1>
+        </a>
+      </div>
+
+      <div class="nav_menu" id="nav-menu">
+        <ul class="nav_list">
+          <li class="nav_item">
+            <a href="index.html" class="nav_link active">Home</a>
+          </li>
+
+
+          <li class="nav_item">
+            <a href="file:///C:/Users/Hamed/Desktop/CodingBooks-master/public/aboutus-/trydo-master/finalaboutus.html" class="nav_link">About</a>
+          </li>
+
+          <li class="nav_item nested-link-container" onclick="displayCategories(event)">
+            <a href="#" id="category-container"><a class="nav_link">Categories</a></a>
+            <ul class="nested-links" id="category-nested-links">
+              <li class="nested-links-item" onclick="nestedLinkHandler('allBooks')">
+                All Books
+              </li>
+              <li class="nested-links-item" onclick="nestedLinkHandler('interview')">
+                Horror novels
+              </li>
+              <li class="nested-links-item" onclick="nestedLinkHandler('codingLanguage')">
+                Science fiction novels
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+
+      <div class="nav_toggle" id="nav-toggle">
+        <i class="bx bx-menu-alt-right"></i>
+      </div>
+    </nav>
+  </header>
+
+  <a href="هنحط هنا لينك اكونت ال Github" target="_blank" class="github-corner"
+    aria-label="View source on GitHub"><svg class="github" width="80" height="80" viewBox="0 0 250 250" style="
+          fill: #fff;
+          color: #151513;
+          position: absolute;
+          z-index: 100;
+          top: 0;
+          border: 0;
+          right: 0;
+        " aria-hidden="true">
+      
+    </svg></a>
+
+  <br /><br />
+  <br />
+  <h2>Horror novels</h2>
+  <div id="Horror novels-container">
+     <tr>
+      <td>
+        <a class="box1" target="”_blank”"><img class="poster" src="public/Novel/The-Exorcist.jpg" alt="Book cover of Data Structures and Algorithms Made Easy" />
+          <button
+            class="mybuttonoverlap btn btn-info">
+            Download<i class="bx bx-xs bx-download" style="color: white; padding-left: 0.5em"></i>
+          </button>
+        </a>
+      </td>
+      <td>
+        <a class="box1" target="”_blank”"><img class="poster" src="public/Novel/photo2.jpeg"
+            alt="Book cover of Cracking the Coding Interview" />
+          <button
+            class="mybuttonoverlap btn btn-info">
+            Download<i class="bx bx-xs bx-download" style="color: white; padding-left: 0.5em"></i></button></a>
+      </td>
+      <td>
+        <a class="box1" target="”_blank”"><img class="poster" src="public/Novel/photo3.jpeg" alt="Book cover of Operating System Concepts" />
+          <button
+           
+            class="mybuttonoverlap btn btn-info">
+            Download<i class="bx bx-xs bx-download" style="color: white; padding-left: 0.5em"></i></button></a>
+      </td>
+      <td>
+        <a class="box1" target="”_blank”"><img class="poster" src="public/Novel/photo4.jpeg" alt="Book Cover of Computer Networking" />
+          <button
+            class="mybuttonoverlap btn btn-info">
+            Download<i class="bx bx-xs bx-download" style="color: white; padding-left: 0.5em"></i></button></a>
+      </td>
+      <td>
+        <a class="box1" target="”_blank”"><img class="poster" src="./public/Novel/photo5.jpeg" alt="Book Cover of Introduction to Algorithms" />
+          <button
+           
+            class="mybuttonoverlap btn btn-info">
+            Download<i class="bx bx-xs bx-download" style="color: white; padding-left: 0.5em"></i></button></a>
+      </td>
+      <td>
+        <a class="box1" target="”_blank”">
+          <img class="poster" src="./public/Novel/the-hunger.jpg" alt="Algorithms" />
+          <button
+           
+            class="mybuttonoverlap btn btn-info">
+            Download<i class="bx bx-xs bx-download" style="color: white; padding-left: 0.5em"></i></button></a>
+      </td>
+    </tr>
+  </div>
+  <h2>Science fiction novels</h2>
+  <div id="coding-books-container">
+      <tr>
+      <td>
+        <a class="box1" target="”_blank”"><img class="poster" src="./public/Novel/photo6.jpeg" alt="Book Cover of C for Dummies" />
+          <button
+           
+            class="mybuttonoverlap btn btn-info">
+            Download<i class="bx bx-xs bx-download" style="color: white; padding-left: 0.5em"></i></button></a>
+      </td>
+      <td>
+        <a class="box1" target="”_blank”"><img class="poster" src="./public/Novel/photo7.jpeg" alt="Book Cover of C++ for Dummies" />
+          <button
+           
+            class="mybuttonoverlap btn btn-info">
+            Download<i class="bx bx-xs bx-download" style="color: white; padding-left: 0.5em"></i></button></a>
+      </td>
+      <td>
+        <a class="box1" target="”_blank”"><img class="poster" src="./public/Novel/photo8.jpeg" alt="Book Cover of Java All In One for Dummies" />
+          <button
+            class="mybuttonoverlap btn btn-info">
+            Download<i class="bx bx-xs bx-download" style="color: white; padding-left: 0.5em"></i></button></a>
+      </td>
+      <td>
+        <a class="box1" target="”_blank”"><img class="poster" src="./public/Novel/photo9.jpeg" alt="Book Cover of Python All In One for Dummies" />
+          <button
+            class="mybuttonoverlap btn btn-info">
+            Download<i class="bx bx-xs bx-download" style="color: white; padding-left: 0.5em"></i></button></a>
+      </td>
+    </tr>
+  </div>
+  <a href="#" id="toTopBtn" class="cd-top text-replace js-cd-top cd-top--is-visible cd-top--fade-out" data-abc="true"></a>
+  <footer>
+    <h3>
+      Made By
+      <a href="https://mohitjaisal.com"><strong class="copyright">Amira Gad</strong></a>
+    </h3>
+    <p class="footer-github">
+      <a href="#"><strong class="copyright"><i class="fab fa-github"></i>
+          GitHub</strong></a>
+    </p>
+  </footer>
+  <!-- Main JS -->
+  <script src="./js/main.js"></script>
+</body>
+
+</html>
